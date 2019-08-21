@@ -1,0 +1,11 @@
+state: enabled
+email: jvanderceelen@gmail.com
+fullname: 'Jonathan van der Ceelen'
+title: Admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$L0gVCAlHF6GVno2A4.SXY.p152xcmBUr4bTNFPS6n6rwzYy.JvPvm

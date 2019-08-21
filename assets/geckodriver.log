@@ -1,0 +1,30 @@
+1566382098086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zsVF7foOQxuB"
+1566382098440	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1566382098440	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1566382098440	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1566382098440	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1566382099707	Marionette	INFO	Listening on port 42167
+1566382099796	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221566233826256%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: nsLoginManager: "searchLogins: `formSubmitURL` or `httpRealm` is recommended"
+console.warn: "Got a mutation for an unexpected actor: server1.conn0.child1/domnode337, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/shared/fronts/inspector.js 286 getMutations/<
+console.warn: "Got a mutation for an unexpected actor: server1.conn0.child1/domnode337, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/shared/fronts/inspector.js 286 getMutations/<
+console.warn: "Got a mutation for an unexpected actor: server1.conn0.child1/domnode337, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/shared/fronts/inspector.js 286 getMutations/<
+console.warn: "Error while detaching the thread front: 'detach' request packet to 'server1.conn0.child1/context18' can't be sent as the connection is closed."
+[Parent 10992, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-qCOyDf/firefox-68.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 10992, Gecko_IOThread] WARNING: pipe error (100): Connection reset by peer: file /build/firefox-qCOyDf/firefox-68.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1566382856083	Marionette	INFO	Stopped listening on port 42167
