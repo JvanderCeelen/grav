@@ -1,0 +1,14 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+
+  @media only screen and (min-width: map-get($screen-width, lg)) {
+    padding: 20px 0;
+  }
+}

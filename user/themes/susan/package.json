@@ -1,0 +1,28 @@
+{
+  "name": "susan",
+  "version": "1.0.0",
+  "description": "Website voor Susan met Grav cms",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2"
+  },
+  "scripts": {
+    "dev": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JvanderCeelen/grav.git"
+  },
+  "author": "Jonathan van der Ceelen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JvanderCeelen/grav/issues"
+  },
+  "homepage": "https://github.com/JvanderCeelen/grav#readme"
+}

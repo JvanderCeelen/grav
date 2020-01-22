@@ -1,5 +1,5 @@
 ---
-Susan's Website
+title: 'Susan''s Website'
 ---
 
 # Dit wordt Susan nieuwe website
