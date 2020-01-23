@@ -1,7 +1,15 @@
 @import 'variables';
 
 @mixin mediaquery($screenwidth) {
-  @media only screen and (min-width: map-get($screen-width, $screenwidth)) {
+  @media only screen and (min-width: map-get($screen-widths, $screenwidth)) {
     @content;
+  }
+}
+
+@each $screenwidth, $value in $screen-widths {
+  .flex-#{$screenwidth} {
+    @include mediaquery($screenwidth) {
+      display: flex;
+    }
   }
 }

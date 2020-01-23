@@ -1,3 +1,13 @@
-<nav>
-  home - info - portfolio - news - links
+<nav v-bind:class="{ 'nav-menu-open': !hideNav}">
+  <button
+    class="nav-menu-button"
+    @click="hideNav = true"
+    aria-label="Close Navigation Menu">×
+  </button>
+  <ul class="flex-sm flex-justify-center">
+    <li>home</li>
+    <li>info</li>
+    <li>portfolio</li>
+    <li>blog</li>
+  </ul>
 </nav>

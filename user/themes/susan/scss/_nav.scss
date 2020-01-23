@@ -1,0 +1,39 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform .3s ease;
+  z-index: 1;
+
+  width: 90%;
+  height: 100%;
+  padding: 20px;
+  background-color: $background-color;
+
+  @include mediaquery(sm) {
+    position: static;
+    transform: translateX(0);
+    transition: none;
+    z-index: 0;
+
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    background-color: transparent;
+
+    > ul {
+
+      > li {
+
+        ~ li {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+.nav-menu-open {
+  transform: translateX(0);
+}

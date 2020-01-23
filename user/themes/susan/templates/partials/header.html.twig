@@ -4,5 +4,10 @@
       <img src="{{ url('theme://images/logo.png') }}" alt="Logo website" />
     </a>
   </div>
-  <button class="nav-menu-button" aira-label="Navigation Menu" aria-expended="false">☰</button>
+  <button
+    class="nav-menu-button"
+    @click="hideNav = false"
+    aira-label="Navigation Menu"
+    aria-expended="false">☰
+  </button>
 </header>
