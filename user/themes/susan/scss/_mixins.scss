@@ -1,1 +1,7 @@
 @import 'variables';
+
+@mixin mediaquery($screenwidth) {
+  @media only screen and (min-width: map-get($screen-width, $screenwidth)) {
+    @content;
+  }
+}

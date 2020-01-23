@@ -4,10 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   watch: true,
   entry: {
-    'boilerplate': ['./scss/_boilerplate.scss'],
-    'layout': ['./scss/_layout.scss'],
-    'mixins': ['./scss/_mixins.scss'],
-    'variables': ['./scss/_variables.scss'],
+    'style': ['./scss/style.scss'],
   },
   output: {
     path: path.resolve(__dirname, 'js')

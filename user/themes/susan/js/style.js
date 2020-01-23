@@ -81,30 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./scss/_layout.scss":
-/*!***************************!*\
-  !*** ./scss/_layout.scss ***!
-  \***************************/
+/***/ "./scss/style.scss":
+/*!*************************!*\
+  !*** ./scss/style.scss ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/_layout.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/style.scss?");
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************!*\
-  !*** multi ./scss/_layout.scss ***!
-  \*********************************/
+/***/ 0:
+/*!*******************************!*\
+  !*** multi ./scss/style.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./scss/_layout.scss */\"./scss/_layout.scss\");\n\n\n//# sourceURL=webpack:///multi_./scss/_layout.scss?");
+eval("module.exports = __webpack_require__(/*! ./scss/style.scss */\"./scss/style.scss\");\n\n\n//# sourceURL=webpack:///multi_./scss/style.scss?");
 
 /***/ })
 

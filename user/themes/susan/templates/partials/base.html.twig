@@ -9,13 +9,16 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.ico') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ url('theme://css-compiled/boilerplate.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('theme://css-compiled/layout.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url('theme://css-compiled/style.css') }}" />
 </head>
 <body>
   <div class="page" role="">
     {% block header %}
       {% include 'partials/header.html.twig' %}
+    {% endblock %}
+
+    {% block nav %}
+      {% include 'partials/nav.html.twig' %}
     {% endblock %}
 
     {% block content %}
