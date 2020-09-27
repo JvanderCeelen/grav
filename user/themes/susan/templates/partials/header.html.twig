@@ -1,13 +1,25 @@
 <header>
-  <div>
-    <a class="logo" href="/" title="Go to home page">
+  <div class="base-style">
+    <a class="logo margin-top-x1" href="/" title="Go to home page">
       <img src="{{ url('theme://images/logo.png') }}" alt="Logo website" />
     </a>
+    <button
+      class="nav-menu-button"
+      @click="hideNav = false"
+      aira-label="Navigation Menu"
+      aria-expended="false">☰
+    </button>
+    <nav v-bind:class="{ 'nav-menu-open': !hideNav}">
+      <button
+        class="nav-menu-button"
+        @click="hideNav = true"
+        aria-label="Close Navigation Menu">×
+      </button>
+      <ul class="flex-sm flex-justify-center main-nav">
+        <li class="main-nav__item"><a href="/">home</a></li>
+        <li class="main-nav__item"><a href="/info">info</a></li>
+        <li class="main-nav__item"><a href="/blog">blog</a></li>
+      </ul>
+    </nav>
   </div>
-  <button
-    class="nav-menu-button"
-    @click="hideNav = false"
-    aira-label="Navigation Menu"
-    aria-expended="false">☰
-  </button>
 </header>

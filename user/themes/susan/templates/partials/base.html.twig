@@ -15,21 +15,25 @@
     <script type="text/javascript" src="{{ url('theme://js/app.js') }}"></script>
 </head>
 <body>
-  <div id="app" class="page" role="" v-bind:class="{'nav-menu-open': !hideNav}">
+  <div id="app" role="" v-bind:class="{'nav-menu-open': !hideNav}">
     {% block header %}
       {% include 'partials/header.html.twig' %}
     {% endblock %}
 
-    {% block nav %}
-      {% include 'partials/nav.html.twig' %}
-    {% endblock %}
+    <main>
+      <div class="content-wrapper">
+        {% block content %}
+          {# {{ page.content|raw }} #}
+        {% endblock %}
+      </div>
+    </main>
 
-    {% block content %}
-        {{ page.content|raw }}
-    {% endblock %}
-
-    {% block footer %}
-      {% include 'partials/footer.html.twig' %}
-    {% endblock %}
+    <footer>
+      <div class="content-wrapper">
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+      </div>
+    </footer>
   </div>
 </body>

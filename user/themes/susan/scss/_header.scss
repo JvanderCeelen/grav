@@ -1,12 +1,18 @@
 header {
+  position: sticky;
   text-align: center;
 }
 
-.logo img {
-  width: 200px;
+.logo {
+  display: block;
+  line-height: 0;
 
-  @include mediaquery(sm) {
-    width: auto;
+  img {
+    width: 200px;
+
+    @include mediaquery(sm) {
+      width: 400px;
+    }
   }
 }
 

@@ -1,0 +1,29 @@
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: block;
+  width: 30%;
+  padding: 20px;
+  color: initial;
+  text-decoration: none;
+  box-shadow: 1px 1px 3px;
+  transition: transform .3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.card__title {
+  padding-bottom: $unit;
+  text-align: center;
+  font-weight: normal;
+  border-bottom: 1px solid $grey;
+}

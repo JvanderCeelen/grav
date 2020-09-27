@@ -5,3 +5,15 @@
 .flex-justify-center {
   justify-content: center;
 }
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+@each $screenwidth, $value in $screen-widths {
+  .flex-#{$screenwidth} {
+    @include mediaquery($screenwidth) {
+      display: flex;
+    }
+  }
+}

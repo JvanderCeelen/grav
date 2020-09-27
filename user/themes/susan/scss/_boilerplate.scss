@@ -4,22 +4,15 @@
 
 body {
   margin: 0;
-}
-
-.page {
-  padding: $gutter;
-
-  @include mediaquery(lg) {
-    padding: $gutter 0;
-  }
-
-  &.nav-menu-open {
-    background-color: rgba(0,0,0,.4);
-  }
+  color: $font-color;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  color: inherit;
 }

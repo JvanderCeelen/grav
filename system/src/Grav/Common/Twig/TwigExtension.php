@@ -613,10 +613,11 @@ class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsIn
     /**
      * @param string $string
      *
+     * @param array $context
      * @param bool $block  Block or Line processing
      * @return mixed|string
      */
-    public function markdownFunction($context = false, $string, $block = true)
+    public function markdownFunction($context, $string, $block = true)
     {
         $page = $context['page'] ?? null;
         return Utils::processMarkdown($string, $block, $page);
@@ -1054,7 +1055,7 @@ class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsIn
      */
     public function jsonDecodeFilter($str, $assoc = false, $depth = 512, $options = 0)
     {
-        return json_decode(html_entity_decode($str), $assoc, $depth, $options);
+        return json_decode(html_entity_decode($str, ENT_COMPAT | ENT_HTML401, 'UTF-8'), $assoc, $depth, $options);
     }
 
     /**

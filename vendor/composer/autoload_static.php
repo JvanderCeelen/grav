@@ -4,19 +4,20 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
+class ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         'a686abd6bcd0f7067184e090d1174003' => __DIR__ . '/../..' . '/system/defines.php',
+        '4daf90f1654433646e3b7bf46d928469' => __DIR__ . '/../..' . '/system/aliases.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -62,6 +63,7 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Phive\\Twig\\Extensions\\Deferred\\' => 31,
         ),
         'N' => 
@@ -217,6 +219,10 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Phive\\Twig\\Extensions\\Deferred\\' => 
         array (
             0 => __DIR__ . '/..' . '/phive/twig-extensions-deferred/src',
@@ -300,14 +306,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
             'Pimple' => 
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
-            ),
-            'ParsedownExtra' => 
-            array (
-                0 => __DIR__ . '/..' . '/erusev/parsedown-extra',
-            ),
-            'Parsedown' => 
-            array (
-                0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
             'PHPExif' => 
             array (
@@ -404,6 +402,7 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Doctrine\\Common\\Cache\\FileCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php',
         'Doctrine\\Common\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php',
         'Doctrine\\Common\\Cache\\FlushableCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/FlushableCache.php',
+        'Doctrine\\Common\\Cache\\InvalidCacheId' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/InvalidCacheId.php',
         'Doctrine\\Common\\Cache\\LegacyMongoDBCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/LegacyMongoDBCache.php',
         'Doctrine\\Common\\Cache\\MemcacheCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MemcacheCache.php',
         'Doctrine\\Common\\Cache\\MemcachedCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MemcachedCache.php',
@@ -415,7 +414,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Doctrine\\Common\\Cache\\PhpFileCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php',
         'Doctrine\\Common\\Cache\\PredisCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php',
         'Doctrine\\Common\\Cache\\RedisCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/RedisCache.php',
-        'Doctrine\\Common\\Cache\\RiakCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php',
         'Doctrine\\Common\\Cache\\SQLite3Cache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/SQLite3Cache.php',
         'Doctrine\\Common\\Cache\\Version' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Version.php',
         'Doctrine\\Common\\Cache\\VoidCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/VoidCache.php',
@@ -743,6 +741,8 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Grav\\Framework\\Pagination\\Interfaces\\PaginationPageInterface' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Pagination/Interfaces/PaginationPageInterface.php',
         'Grav\\Framework\\Pagination\\Pagination' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Pagination/Pagination.php',
         'Grav\\Framework\\Pagination\\PaginationPage' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Pagination/PaginationPage.php',
+        'Grav\\Framework\\Parsedown\\Parsedown' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Parsedown/Parsedown.php',
+        'Grav\\Framework\\Parsedown\\ParsedownExtra' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Parsedown/ParsedownExtra.php',
         'Grav\\Framework\\Psr7\\AbstractUri' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Psr7/AbstractUri.php',
         'Grav\\Framework\\Psr7\\Request' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Psr7/Request.php',
         'Grav\\Framework\\Psr7\\Response' => __DIR__ . '/../..' . '/system/src/Grav/Framework/Psr7/Response.php',
@@ -956,6 +956,8 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Monolog\\Handler\\FirePHPHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php',
         'Monolog\\Handler\\FleepHookHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php',
         'Monolog\\Handler\\FlowdockHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php',
+        'Monolog\\Handler\\FormattableHandlerInterface' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/FormattableHandlerInterface.php',
+        'Monolog\\Handler\\FormattableHandlerTrait' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/FormattableHandlerTrait.php',
         'Monolog\\Handler\\GelfHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/GelfHandler.php',
         'Monolog\\Handler\\GroupHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/GroupHandler.php',
         'Monolog\\Handler\\HandlerInterface' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/HandlerInterface.php',
@@ -973,6 +975,8 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Monolog\\Handler\\NewRelicHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php',
         'Monolog\\Handler\\NullHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/NullHandler.php',
         'Monolog\\Handler\\PHPConsoleHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php',
+        'Monolog\\Handler\\ProcessableHandlerInterface' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/ProcessableHandlerInterface.php',
+        'Monolog\\Handler\\ProcessableHandlerTrait' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/ProcessableHandlerTrait.php',
         'Monolog\\Handler\\PsrHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/PsrHandler.php',
         'Monolog\\Handler\\PushoverHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/PushoverHandler.php',
         'Monolog\\Handler\\RavenHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Handler/RavenHandler.php',
@@ -1052,9 +1056,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'PHPExif\\Mapper\\Native' => __DIR__ . '/..' . '/miljar/php-exif/lib/PHPExif/Mapper/Native.php',
         'PHPExif\\Reader\\Reader' => __DIR__ . '/..' . '/miljar/php-exif/lib/PHPExif/Reader/Reader.php',
         'PHPExif\\Reader\\ReaderInterface' => __DIR__ . '/..' . '/miljar/php-exif/lib/PHPExif/Reader/ReaderInterface.php',
-        'Parsedown' => __DIR__ . '/..' . '/erusev/parsedown/Parsedown.php',
-        'ParsedownExtra' => __DIR__ . '/..' . '/erusev/parsedown-extra/ParsedownExtra.php',
-        'ParsedownExtraTest' => __DIR__ . '/..' . '/erusev/parsedown-extra/test/ParsedownExtraTest.php',
         'Phive\\Twig\\Extensions\\Deferred\\DeferredBlockNode' => __DIR__ . '/..' . '/phive/twig-extensions-deferred/src/DeferredBlockNode.php',
         'Phive\\Twig\\Extensions\\Deferred\\DeferredExtension' => __DIR__ . '/..' . '/phive/twig-extensions-deferred/src/DeferredExtension.php',
         'Phive\\Twig\\Extensions\\Deferred\\DeferredNode' => __DIR__ . '/..' . '/phive/twig-extensions-deferred/src/DeferredNode.php',
@@ -1078,6 +1079,10 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Pimple\\Tests\\Psr11\\ContainerTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ContainerTest.php',
         'Pimple\\Tests\\Psr11\\ServiceLocatorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ServiceLocatorTest.php',
         'Pimple\\Tests\\ServiceIteratorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/ServiceIteratorTest.php',
+        'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
+        'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
+        'Psr\\Cache\\CacheItemPoolInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemPoolInterface.php',
+        'Psr\\Cache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/cache/src/InvalidArgumentException.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -1192,7 +1197,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Symfony\\Component\\Console\\Formatter\\WrappableOutputFormatterInterface' => __DIR__ . '/..' . '/symfony/console/Formatter/WrappableOutputFormatterInterface.php',
         'Symfony\\Component\\Console\\Helper\\DebugFormatterHelper' => __DIR__ . '/..' . '/symfony/console/Helper/DebugFormatterHelper.php',
         'Symfony\\Component\\Console\\Helper\\DescriptorHelper' => __DIR__ . '/..' . '/symfony/console/Helper/DescriptorHelper.php',
-        'Symfony\\Component\\Console\\Helper\\Dumper' => __DIR__ . '/..' . '/symfony/console/Helper/Dumper.php',
         'Symfony\\Component\\Console\\Helper\\FormatterHelper' => __DIR__ . '/..' . '/symfony/console/Helper/FormatterHelper.php',
         'Symfony\\Component\\Console\\Helper\\Helper' => __DIR__ . '/..' . '/symfony/console/Helper/Helper.php',
         'Symfony\\Component\\Console\\Helper\\HelperInterface' => __DIR__ . '/..' . '/symfony/console/Helper/HelperInterface.php',
@@ -1248,8 +1252,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Symfony\\Component\\EventDispatcher\\EventSubscriberInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/EventSubscriberInterface.php',
         'Symfony\\Component\\EventDispatcher\\GenericEvent' => __DIR__ . '/..' . '/symfony/event-dispatcher/GenericEvent.php',
         'Symfony\\Component\\EventDispatcher\\ImmutableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/ImmutableEventDispatcher.php',
-        'Symfony\\Component\\EventDispatcher\\LegacyEventDispatcherProxy' => __DIR__ . '/..' . '/symfony/event-dispatcher/LegacyEventDispatcherProxy.php',
-        'Symfony\\Component\\EventDispatcher\\LegacyEventProxy' => __DIR__ . '/..' . '/symfony/event-dispatcher/LegacyEventProxy.php',
         'Symfony\\Component\\Process\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/process/Exception/ExceptionInterface.php',
         'Symfony\\Component\\Process\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/symfony/process/Exception/InvalidArgumentException.php',
         'Symfony\\Component\\Process\\Exception\\LogicException' => __DIR__ . '/..' . '/symfony/process/Exception/LogicException.php',
@@ -1277,8 +1279,6 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
         'Symfony\\Component\\VarDumper\\Caster\\DOMCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DOMCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\DateCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DateCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\DoctrineCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DoctrineCaster.php',
-        'Symfony\\Component\\VarDumper\\Caster\\DsCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DsCaster.php',
-        'Symfony\\Component\\VarDumper\\Caster\\DsPairStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DsPairStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\EnumStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/EnumStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\ExceptionCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ExceptionCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\FrameStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/FrameStub.php',
@@ -1776,11 +1776,11 @@ class ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit136a0fb10a59b8a3c2b3b9979a76fc40::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit3ca100a8fab39e9e5daefd9e83778204::$classMap;
 
         }, null, ClassLoader::class);
     }

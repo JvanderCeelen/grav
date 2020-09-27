@@ -1,1 +1,19 @@
 {% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <div class="card-wrapper base-style">
+  {# TODO: for loop met categorien #}
+    <a class="card" href="/fantasy" class="card">
+      <h4 class="card__title">Fantasy</h4>
+      <img src="https://placekitten.com/g/400/600" alt="Fantasty costumes" />
+    </a>
+    <a class="card" href="/historical" class="card">
+      <h4 class="card__title">Historisch</h4>
+      <img src="https://placekitten.com/g/400/600" alt="Historical costumes" />
+    </a>
+    <a class="card" href="/modern" class="card">
+      <h4 class="card__title">Eigentijds</h4>
+      <img src="https://placekitten.com/g/400/600" alt="Modern clothing" />
+    </a>
+  </div>
+{% endblock %}

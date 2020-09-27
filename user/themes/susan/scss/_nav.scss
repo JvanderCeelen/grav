@@ -8,26 +8,35 @@ nav {
 
   width: 90%;
   height: 100%;
-  padding: 20px;
+  padding: $unit;
   background-color: $background-color;
 
   @include mediaquery(sm) {
-    position: static;
+    position: relative;
     transform: translateX(0);
     transition: none;
     z-index: 0;
 
     width: auto;
     height: auto;
-    margin-top: 40px;
+    margin-top: $unit;
     background-color: transparent;
 
     > ul {
 
       > li {
 
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-image: url('/user/themes/susan/images/star.svg')
+        }
+
         ~ li {
-          padding-left: 40px;
+          margin-left: $unit * 2;
         }
       }
     }
@@ -36,4 +45,16 @@ nav {
 
 .nav-menu-open {
   transform: translateX(0);
+}
+
+.main-nav__item {
+  position: relative;
+
+  a {
+    display: block;
+    font-size: $unit * 1.25;
+    text-decoration: none;
+
+    @include hover();
+  }
 }

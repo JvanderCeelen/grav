@@ -5,5 +5,5 @@ $screen-widths: (
   lg: 1200px,
 );
 
-$gutter: 20px;
-$background-color: #fff;
+$unit: 1rem;
+$gutter: $unit * 2;
