@@ -1,16 +1,29 @@
-.card-wrapper {
-  display: flex;
-  justify-content: space-between;
+@include mediaquery(from, sm) {
+  .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card {
   display: block;
-  width: 30%;
   padding: 20px;
   color: initial;
   text-decoration: none;
   box-shadow: 1px 1px 3px;
   transition: transform .3s ease;
+
+  @include mediaquery (from, sm) {
+    width: 30%;
+  }
+
+  ~ .card {
+    margin-top: $unit * 2;
+
+    @include mediaquery(from, sm) {
+      margin-top: 0;
+    }
+  }
 
   &:hover {
     transform: scale(1.02);

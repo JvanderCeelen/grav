@@ -10,10 +10,12 @@
   justify-content: space-between;
 }
 
-@each $screenwidth, $value in $screen-widths {
-  .flex-#{$screenwidth} {
-    @include mediaquery($screenwidth) {
-      display: flex;
+@each $screen-width, $value in $screen-widths {
+  @each $breakpoint-direction in $breakpoint-directions {
+    .flex-#{$breakpoint-direction}-#{$screen-width} {
+      @include mediaquery($breakpoint-direction, $screen-width) {
+        display: flex;
+      }
     }
   }
 }

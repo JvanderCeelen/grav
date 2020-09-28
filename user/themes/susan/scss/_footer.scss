@@ -20,7 +20,8 @@ footer {
       margin-left: $unit / 2;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: white;
     }
   }

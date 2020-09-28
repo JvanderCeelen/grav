@@ -5,8 +5,19 @@ $quantities: 0.25, 0.5, 0.75, 1, 1.5, 2, 4;
 @each $property in $properties {
   @each $alignment in $alignments {
     @each $quantity in $quantities {
+
       .#{$property}-#{$alignment}-x#{$quantity} {
         #{$property}-#{$alignment}: $unit * $quantity;
+      }
+
+      @each $breakpoint-direction in $breakpoint-directions {
+        @each $screen-width, $value in $screen-widths {
+          .#{$property}-#{$alignment}-x#{$quantity}-#{$breakpoint-direction}-#{$screen-width} {
+            @include mediaquery($breakpoint-direction, $screen-width) {
+              #{$property}-#{$alignment}: $unit * $quantity;
+            }
+          }
+        }
       }
     }
   }

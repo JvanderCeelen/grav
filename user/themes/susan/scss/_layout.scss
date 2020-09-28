@@ -10,4 +10,8 @@ main {
 
 .base-style {
   padding: $gutter;
+
+  @include mediaquery(from, sm) {
+    padding: $gutter-desktop;
+  }
 }

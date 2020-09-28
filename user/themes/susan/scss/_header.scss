@@ -10,7 +10,7 @@ header {
   img {
     width: 200px;
 
-    @include mediaquery(sm) {
+    @include mediaquery(from, sm) {
       width: 400px;
     }
   }
@@ -26,7 +26,7 @@ header {
   cursor: pointer;
   font-family: sans-serif;
 
-  @include mediaquery(sm) {
+  @include mediaquery(from, sm) {
     display: none;
   }
 }

@@ -1,8 +1,17 @@
 @import 'variables';
 
-@mixin mediaquery($screenwidth) {
-  @media only screen and (min-width: map-get($screen-widths, $screenwidth)) {
-    @content;
+@mixin mediaquery($direction, $screen-width) {
+
+  @if $direction == 'from' {
+    @media only screen and (min-width: map-get($screen-widths, $screen-width)) {
+      @content;
+    }
+  }
+
+  @if $direction == 'until' {
+    @media only screen and (max-width: map-get($screen-widths, $screen-width) - 1px) {
+      @content;
+    }
   }
 }
 

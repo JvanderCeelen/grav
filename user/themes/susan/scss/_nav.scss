@@ -11,7 +11,7 @@ nav {
   padding: $unit;
   background-color: $background-color;
 
-  @include mediaquery(sm) {
+  @include mediaquery(from, sm) {
     position: relative;
     transform: translateX(0);
     transition: none;
