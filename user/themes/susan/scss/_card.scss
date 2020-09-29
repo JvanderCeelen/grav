@@ -7,7 +7,7 @@
 
 .card {
   display: block;
-  padding: 20px;
+  padding: 0 20px 20px;
   color: initial;
   text-decoration: none;
   box-shadow: 1px 1px 3px;
@@ -35,6 +35,7 @@
 }
 
 .card__title {
+  padding-top: $unit;
   padding-bottom: $unit;
   text-align: center;
   font-weight: normal;

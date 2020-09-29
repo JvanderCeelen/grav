@@ -1,4 +1,4 @@
-nav {
+.mobile-menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,7 +43,18 @@ nav {
   }
 }
 
-.nav-menu-open {
+.no-scroll {
+  overflow: hidden;
+}
+
+.mobile-menu-open {
+
+  > header {
+    position: static;
+  }
+}
+
+nav.mobile-menu-open {
   transform: translateX(0);
 }
 
@@ -52,9 +63,18 @@ nav {
 
   a {
     display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: $unit * 1.25;
+    text-align: left;
     text-decoration: none;
+    border-bottom: 1px solid lighten($font-color, 60%);
 
-    @include hover();
+    @include mediaquery(from, sm) {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      @include hover();
+    }
   }
 }

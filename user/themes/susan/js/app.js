@@ -3,7 +3,7 @@ window.onload = function () {
     delimiters: ['${', '}'],
     el: '#app',
     data: {
-      hideNav: true,
+      hideMobileNav: true,
     }
   })
 }

@@ -15,7 +15,7 @@
     <script type="text/javascript" src="{{ url('theme://js/app.js') }}"></script>
 </head>
 <body>
-  <div id="app" role="" v-bind:class="{'nav-menu-open': !hideNav}">
+  <div id="app" role="" v-bind:class="{'mobile-menu-open': !hideMobileNav}">
     {% block header %}
       {% include 'partials/header.html.twig' %}
     {% endblock %}

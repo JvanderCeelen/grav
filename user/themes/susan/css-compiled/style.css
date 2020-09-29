@@ -20,7 +20,7 @@ a {
 
 .card {
   display: block;
-  padding: 20px;
+  padding: 0 20px 20px;
   color: initial;
   text-decoration: none;
   box-shadow: 1px 1px 3px;
@@ -39,6 +39,7 @@ a {
     width: 100%; }
 
 .card__title {
+  padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
   font-weight: normal;
@@ -87,18 +88,23 @@ a {
 
 header {
   position: sticky;
-  text-align: center; }
+  top: 0;
+  text-align: center;
+  background-color: #fff; }
 
 .logo {
   display: block;
   line-height: 0; }
   .logo img {
-    width: 200px; }
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (min-width: 768px) {
       .logo img {
         width: 400px; } }
 
-.nav-menu-button {
+.mobile-menu-button {
   position: absolute;
   top: 1rem;
   right: 0.5rem;
@@ -108,8 +114,11 @@ header {
   cursor: pointer;
   font-family: sans-serif; }
   @media only screen and (min-width: 768px) {
-    .nav-menu-button {
+    .mobile-menu-button {
       display: none; } }
+  .mobile-menu-button--close {
+    position: static;
+    margin-left: auto; }
 
 footer {
   text-align: center;
@@ -143,12 +152,12 @@ main {
   margin: 0 auto; }
 
 .base-style {
-  padding: 1rem; }
+  padding: 1rem 1rem 0.5rem; }
   @media only screen and (min-width: 768px) {
     .base-style {
-      padding: 2rem; } }
+      padding: 2rem 2rem 1rem; } }
 
-nav {
+.mobile-menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -160,7 +169,7 @@ nav {
   padding: 1rem;
   background-color: #fff; }
   @media only screen and (min-width: 768px) {
-    nav {
+    .mobile-menu {
       position: relative;
       transform: translateX(0);
       transition: none;
@@ -169,37 +178,52 @@ nav {
       height: auto;
       margin-top: 1rem;
       background-color: transparent; }
-      nav > ul > li::before {
+      .mobile-menu > ul > li::before {
         content: "";
         position: absolute;
         display: block;
         width: 10px;
         height: 10px;
         background-image: url("/user/themes/susan/images/star.svg"); }
-      nav > ul > li ~ li {
+      .mobile-menu > ul > li ~ li {
         margin-left: 2rem; } }
 
-.nav-menu-open {
+.no-scroll {
+  overflow: hidden; }
+
+.mobile-menu-open > header {
+  position: static; }
+
+nav.mobile-menu-open {
   transform: translateX(0); }
 
 .main-nav__item {
   position: relative; }
   .main-nav__item a {
     display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 1.25rem;
-    text-decoration: none; }
-    .main-nav__item a::after {
-      content: "";
-      position: absolute;
-      bottom: -0.5rem;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #c9ac3b;
-      opacity: 0;
-      transition: opacity .75s ease; }
-    .main-nav__item a:hover::after {
-      opacity: 1; }
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid #cccccc; }
+    @media only screen and (min-width: 768px) {
+      .main-nav__item a {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none; }
+        .main-nav__item a::after {
+          content: "";
+          position: absolute;
+          bottom: -0.5rem;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #c9ac3b;
+          opacity: 0;
+          transition: opacity .75s ease; }
+        .main-nav__item a:hover::after {
+          opacity: 1; } }
 
 h1, h2, h3, h4 {
   margin-top: 0; }

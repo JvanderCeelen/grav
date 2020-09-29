@@ -9,9 +9,9 @@ main {
 }
 
 .base-style {
-  padding: $gutter;
+  padding: $gutter $gutter $gutter / 2;
 
   @include mediaquery(from, sm) {
-    padding: $gutter-desktop;
+    padding: $gutter-desktop $gutter-desktop $gutter-desktop / 2;
   }
 }
