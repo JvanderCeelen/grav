@@ -90,7 +90,8 @@ header {
   position: sticky;
   top: 0;
   text-align: center;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 10; }
 
 .logo {
   display: block;
@@ -183,8 +184,7 @@ main {
         position: absolute;
         display: block;
         width: 10px;
-        height: 10px;
-        background-image: url("/user/themes/susan/images/star.svg"); }
+        height: 10px; }
       .mobile-menu > ul > li ~ li {
         margin-left: 2rem; } }
 
